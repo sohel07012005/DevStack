@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import Nav from "./components/Nav"
 import Technologies from "./components/Technologies"
 import type { TechnologyType } from "./components/types/Type";
+import Footer from "./Footer";
 
 
 function App() {
@@ -13,7 +14,6 @@ function App() {
    return data ;
   }
 
-
  return (
    <>
     <Nav></Nav>
@@ -21,6 +21,7 @@ function App() {
     <Suspense fallback={<h1 className="container mx-auto text-2xl">Loading technologies...</h1>}>
     <Technologies loadDataPromise={loadDataPromise()}></Technologies>
     </Suspense>
+    <Footer></Footer>
    </>
  )
 }
