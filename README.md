@@ -1,73 +1,44 @@
+->>>>>> Dev Stack
+A simple and modern web application for developers to explore useful technologies, tools, and resources.
 
-### 📱 Responsive Design
-- Fully responsive across mobile, tablet, and desktop.
-- Follow standard responsive practices.
+->>>>>> Technologies Used
+React
+TypeScript
+Tailwind CSS
+React Icons
+JSON
+npm vite
 
----
+->>>>>> Main 3 Features :
+1.Technology Explorer 
+Browse different technologies with their names, icons, and details.
+2.Add to Stack
+Add your favorite technologies to stack.
+3.Remove from Stack
+Easily remove technologies from your stack .
 
-# 🚀 Challenges Part (10 Marks)
+->>>>>>  What is JSX, and why is it used in React?
+JSX makes opportunity to write HTML-like code inside JavaScript.It makes React components easier to write and understand.
 
-### 🔔 Use a NPM Package React-Toastify
-- Use react-toastify to show alerts for: add to stack, duplicate add attempt, remove, and remove all.
+->>>>>>  What is the difference between props and state?
+Props are data passed from a parent to a child.
+State is data that belongs to a component and can change.
 
----
+->>>>>> What does the `useState` hook do, and where did you use it in this project?
+useState hook stores data that can change in a component.I used it to manage the stack and update it when items are added or removed.
 
-### ⏳ Loading State
-- Show a loading message/spinner while the JSON data is being fetched.
-- Note: since the JSON is a local file, the loading state may only be visible for a few milliseconds and can be hard to catch on screen. That is completely fine — the requirement is that the loading state exists and works, not that it stays visible for long.
+->>>>>> What does the `useEffect` hook do, and why did you need it to load the JSON data?
+useEffect runs code when something happens, such as when a component loads.useEffect is used because loading data is a side effect.
 
----
+->>>>>>  Why does every item in a `.map()` list need a unique `key` prop?
+The key helps React identify each item uniquely in the list.
 
-### 🎨 Gradient Brand Theme
-- Use one shared gradient (orange → pink → violet) for the brand name, hero heading highlight, and primary buttons.
-- Define the gradient in one place so the whole UI can be re-themed by changing a single value.
+->>>>>>  What is conditional rendering? 
+Conditional rendering means showing something only when a condition is true/false.
+{stack.length === 0 && (
+  <p>Your stack is empty.</p>
+)}
+In this project when stack zero it shows empty stack . And when stack has present any items that shows those .
 
----
-
-### 📂 GitHub Repository
-- Create a beautiful GitHub Readme with the following description:
-  - Name of your project
-  - A little description
-  - Technology that you use
-  - 3 features about your project
-
-- Also answer these React questions at the end of your Readme (write the answers in your own words, short and simple):
-  1. What is JSX, and why is it used in React?
-  2. What is the difference between props and state?
-  3. What does the `useState` hook do, and where did you use it in this project?
-  4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
-  5. Why does every item in a `.map()` list need a unique `key` prop?
-  6. What is conditional rendering? Show one place you used it (example: the empty stack message).
-  7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
-
----
-
-## ⚙️ Technology You Can Use
-- React.js
-- Tailwind CSS, DaisyUI
-- TypeScript / JavaScript (ES6+)
-- React-Toastify (NPM Package)
-- JSON (for technology data)
-- Vite (build tool)
-
----
-
-## ❓ Common FAQ
-
-**1. Where can we deploy the site?**  
-Anywhere you like — Netlify, Vercel, Cloudflare Pages, or any other host. There is no fixed platform.
-
-**2. Do we have to use TypeScript?**  
-No. You can use TypeScript or JavaScript. If you want to build the whole project in plain JavaScript, that is completely fine.
-
-**3. Can we change the title, logo, and colors?**  
-Yes. The project title, logo, and color scheme are all yours to change — just keep them relevant to the project. Don't use random or gobindo colors and don't put an unrelated title/logo.
-
-**4. Where do we get the technology logos/icons?**  
-You can use image URLs from Google or from anywhere you like. A good source with clean, ready-to-use tech logos is <https://techicons.dev/> — copy the icon URL from there and put it in your JSON data.
-
----
-
-## 📤 What to submit:
-- GitHub Repository Link:
-- Live Site Link:
+->>>>>>  How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+The parent sends data to the child using props.The child can send something back by calling a function passed through props.
