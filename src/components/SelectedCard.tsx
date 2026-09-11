@@ -12,21 +12,21 @@ const SelectedCard = ({ technology, selected,setSelected,}: PropsTypeAvailableCa
     }
   
     return (
-    <div className="flex w-full items-center justify-between rounded-2xl border border-[#dce4ef] bg-white mt-4 px-5 py-3">
-      <div className="flex items-center gap-5">
+    <div className="flex w-full items-center justify-between rounded-2xl border border-[#dce4ef] bg-white mt-4 px-3 py-2">
+      <div className="flex items-center gap-2">
         <img
           src={technology.icon}
           alt="icon"
-          className="h-10 w-10 object-contain"
+          className="h-8 w-8 object-contain"
         />
         <div>
-          <h3 className="text-xl font-semibold text-[#101828]">
+          <h3 className="font-semibold text-[#101828]">
             {technology.name}
           </h3>
-          <p className=" text-[#94a7c5]">{technology.category}</p>
+          <p className="text-sm text-[#94a7c5]">{technology.category}</p>
         </div>
       </div>
-      <button onClick={()=>handleRemove(technology)} className="text-4xl font-light text-[#94a7c5]"><RxCross2 />
+      <button onClick={()=>handleRemove(technology)} className="text-3xl font-light text-[#94a7c5]"><RxCross2 />
        </button>
     </div>
   );

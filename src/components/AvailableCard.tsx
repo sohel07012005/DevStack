@@ -25,7 +25,7 @@ const AvailableCard = ({ technology,selected,setSelected }:PropsTypeAvailableCar
   }
   
   return (
-    <div className={`w-full rounded-[30px] border ${isAdded?" border-pink-300":"border-[#e8edf4]"}  bg-white p-8 shadow-[0_2px_8px_rgba(15,23,42,0.04)]`}>
+    <div className={`w-full rounded-[30px] border ${isAdded?" border-pink-300":"border-[#e8edf4]"}  bg-white p-6 shadow-[0_2px_8px_rgba(15,23,42,0.04)]`}>
     <div className="relative">
   <div className="flex items-center justify-start md:block">
     <img
@@ -39,7 +39,7 @@ const AvailableCard = ({ technology,selected,setSelected }:PropsTypeAvailableCar
     </h2>
   </div>
 
-  <span className="absolute right-0 top-0 rounded-full border border-pink-100 bg-pink-50 px-3 py-1 text-pink-600">
+  <span className="absolute right-0 top-0 rounded-full border border-pink-100 bg-pink-50 px-2 py-1 text-pink-600">
     {technology.badge}
   </span>
 </div>
@@ -50,15 +50,15 @@ const AvailableCard = ({ technology,selected,setSelected }:PropsTypeAvailableCar
 
       <div className="my-7 border-t border-[#edf1f5]" />
 
-      <div className="flex flex-wrap items-center justify-between gap-2">
-        <span className="rounded-lg bg-[#f1f4f8] px-2 py-1 text-[#4b5b73] text-sm">
+      <div className="flex flex-wrap items-center justify-between gap-2 text-[12px]">
+        <span className="rounded-lg bg-[#f1f4f8] px-1 py-1 text-[#4b5b73] ">
           {technology.category}
         </span>
 
-        <span className=" text-[#667895] text-sm">{technology.difficulty}</span>
+        <span className=" text-[#667895]">{technology.difficulty}</span>
 
         <div className="flex items-center gap-1">
-          <span className="text-xl text-amber-400"><IoIosStar /></span>
+          <span className=" text-amber-400"><IoIosStar /></span>
           <span className="font-medium text-[#344054]">{technology.rating}</span>
         </div>
       </div>

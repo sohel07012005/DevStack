@@ -44,7 +44,7 @@ const SelectedTechnologies = ({ selected, setSelected }: PropsTypeSelected) => {
             selected.map(technology=><SelectedCard technology={technology} key={technology.id} selected={selected} setSelected={setSelected}></SelectedCard>)
             }
         </div>
-        <button onClick={handleAllRemove} className="w-full py-3 border-2 border-red-400 text-2xl text-red-600 rounded-2xl mt-20 cursor-pointer">Remove All</button>
+        <button onClick={handleAllRemove} className="w-full py-2 border-2 border-red-400 text-2xl text-red-600 rounded-2xl mt-20 cursor-pointer">Remove All</button>
       </div>
   );
 };
