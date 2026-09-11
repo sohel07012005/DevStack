@@ -26,21 +26,23 @@ const AvailableCard = ({ technology,selected,setSelected }:PropsTypeAvailableCar
   
   return (
     <div className={`w-full rounded-[30px] border ${isAdded?" border-pink-300":"border-[#e8edf4]"}  bg-white p-8 shadow-[0_2px_8px_rgba(15,23,42,0.04)]`}>
-      <div className="flex items-start justify-between gap-6">
-        <img
-          src={technology.icon}
-          alt="icon"
-          className="h-10 w-10 object-contain"
-        />
+    <div className="relative">
+  <div className="flex items-center justify-start md:block">
+    <img
+      src={technology.icon}
+      alt="icon"
+      className="h-10 w-10 object-contain"
+    />
 
-        <span className="shrink-0 rounded-full border border-pink-100 bg-pink-50 px-3 py-1 text-pink-600">
-          {technology.badge}
-        </span>
-      </div>
+    <h2 className=" ml-2 md:ml-0 md:mt-6 text-xl md:text-2xl font-bold text-[#101828]">
+      {technology.name}
+    </h2>
+  </div>
 
-      <h2 className="mt-8 text-2xl font-bold text-[#101828]">
-        {technology.name}
-      </h2>
+  <span className="absolute right-0 top-0 rounded-full border border-pink-100 bg-pink-50 px-3 py-1 text-pink-600">
+    {technology.badge}
+  </span>
+</div>
 
       <p className="mt-5 text-[#667895]">
        {technology.description}
